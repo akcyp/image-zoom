@@ -12,9 +12,8 @@ import React, {
   useState
 } from 'react'
 import ControlledActivated from './ControlledActivated'
-import './styles.css'
 
-interface Props {
+export interface Props {
   children: ReactNode
   closeText?: string
   isZoomed: boolean

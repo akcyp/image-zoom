@@ -17,9 +17,8 @@ import {
   getModalOverlayStyle,
   pseudoParentEl
 } from './helpers'
-import './styles.css'
 
-interface Props {
+export interface Props {
   children: ReactNode
   closeText?: string
   isActive: boolean
