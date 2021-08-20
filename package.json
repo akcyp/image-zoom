@@ -55,7 +55,8 @@
     "prepublishOnly": "run-p lint test && npm run build:js",
     "start": "BUILD_ENV=esm run-s clean build:js && BUILD_ENV=esm run-p build:js:watch storybook",
     "storybook": "start-storybook -p 6006",
-    "test": "jest"
+    "test": "jest",
+    "prepare": "npm run build:js"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "11.0.2",
